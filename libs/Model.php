@@ -3,6 +3,6 @@
 class Model {
 
     function __construct() {
-        // $this->database = new db()
+        $this->db = new Database();
     }
 }

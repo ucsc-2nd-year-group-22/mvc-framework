@@ -15,7 +15,6 @@ class View {
             require 'views/header.php';
             require 'views/' . $name . '.php';
             require 'views/footer.php';
-
         }
 
      

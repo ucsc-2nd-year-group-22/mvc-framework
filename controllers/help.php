@@ -13,7 +13,7 @@ class Help extends Controller{
 
     public function other($arg = false) {
         require 'models/help_model.php';
-        $model = new Help_model();
+        $model = new Help_Model();
         $this->view->rendor('help/index', $data);
         
         // $this->view->blah = $model->blah();

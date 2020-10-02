@@ -5,7 +5,10 @@ class View {
         // echo 'This is the view<br>';
     }
 
-    public function rendor($name, $noInclude = false) {
+    public function rendor($name, $data =[], $noInclude = false) {
+        if(isset($data))
+            extract($data);        
+        
         if($noInclude == true) {
             require 'views/' . $name . '.php';
         } else {
@@ -14,5 +17,7 @@ class View {
             require 'views/footer.php';
 
         }
+
+     
     }
 }

@@ -12,5 +12,6 @@
     <a href="<?= URL?>">Home</a> | 
     <a href="<?= URL?>help">Help</a> | 
     <a href="<?= URL?>login">Login</a>
+    <!-- <a href="<?= URL?>login">Login</a> -->
 </div>
 <div id="content">

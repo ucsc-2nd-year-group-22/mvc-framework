@@ -13,7 +13,14 @@ class Login_Model extends Model {
             ':password' => $_POST['password']
         ));
 
-        $data = $st->fetchAll();
-        print_r($data);
+        // $data = $st->fetchAll();
+        // print_r($data);
+        $count = $st->rowCount();
+        if($count > 0) {
+            
+        } else {
+            // show error
+        }
+        
     }
 }

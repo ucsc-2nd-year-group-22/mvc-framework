@@ -10,4 +10,8 @@ class Login extends Controller {
         $this->view->rendor('login/index');
     }
 
+    function run() {
+        $this->model->run();
+    }
+
 }

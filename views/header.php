@@ -8,9 +8,15 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php Session::init();?>
 <div id="header">
     <a href="<?= URL?>">Home</a> | 
-    <a href="<?= URL?>help">Help</a> | 
+    <a href="<?= URL?>help">Help</a> |
+    <?php if(Session::get('loggedIn') == true): ?>
+    <a href="<?= URL?>dashboard/logout">Logout</a> | 
+    <?php else: ?>
     <a href="<?= URL?>login">Login</a>
+    <?php endif?>
 </div>
 <div id="content">

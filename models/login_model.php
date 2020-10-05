@@ -20,10 +20,10 @@ class Login_Model extends Model {
             // login
             Session::init();
             Session::set('loggedIn', true);
-            header('location: dashboard');
+            header('location: ../dashboard');
         } else {
             // show error
-            header('location: login');
+            header('location: ../login');
         }
         
     }

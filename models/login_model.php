@@ -17,9 +17,13 @@ class Login_Model extends Model {
         // print_r($data);
         $count = $st->rowCount();
         if($count > 0) {
-            
+            // login
+            Session::init();
+            Session::set('loggedIn', true);
+            header('location: dashboard');
         } else {
             // show error
+            header('location: login');
         }
         
     }

@@ -21,10 +21,10 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
     users
     ------
 
-    Field       Type        Null    Key     Default     Extra
+    Field       Type            Null        Key     Default     Extra
     ------------------------------------------------------------------------
-    id	        int(11)	    NO	    PRI	    NULL	    auto_increment	
-    login	    varchar(25)	NO		        NULL	
-    password	varchar(32)	NO		        NULL
+    id	        int(11)	        NO	    PRI	    NULL	auto_increment	
+    login	varchar(25)	NO		    NULL	
+    password	varchar(32)	NO		    NULL
 		
 ```

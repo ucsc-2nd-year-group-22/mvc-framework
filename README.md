@@ -6,7 +6,9 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
 ## Important !
 1. Fork the repository.
 1. Make sure that the root directory name matches with **URL** in **config/paths.php**
-```define('URL', 'http://localhost/mvc-framework/');```
+```
+   define('URL', 'http://localhost/mvc-framework/');
+```
 1. Change database settings in **config/database **.
 ``` 
     define('DB_TYPE', 'mysql');

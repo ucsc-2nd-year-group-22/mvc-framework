@@ -28,5 +28,17 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
     id	        int(11)	        NO	    PRI	    NULL	auto_increment	
     login	varchar(25)	NO		    NULL	
     password	varchar(32)	NO		    NULL
+
+    data
+    -----
+
+    Field       Type            Null        Key     Default     Extra
+    ------------------------------------------------------------------------
+
+    id	    int(11)	            NO	        PRI	    NULL     	auto_increment	
+    text	varchar(255)	    NO		            NULL
+		
+
+    
 		
 ```

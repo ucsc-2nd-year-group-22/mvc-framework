@@ -1,0 +1,2 @@
+// Custome js
+alert("Heeeey");

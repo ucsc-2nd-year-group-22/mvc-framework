@@ -1,1 +1,5 @@
-alert("I'm default");
+$(function() {
+    // $('#randomInsert').submit(function() {
+    //     return false;
+    // })
+})

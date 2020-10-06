@@ -1,2 +1,5 @@
-// Custome js
-alert("Heeeey");
+// Custom js
+
+$(document).ready(function() {
+
+});

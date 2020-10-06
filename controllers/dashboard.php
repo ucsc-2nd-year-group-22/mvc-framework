@@ -18,11 +18,10 @@ class Dashboard extends Controller {
     }
 
     function logout() {
-        Session::destroy();
+        // Session::destroy();
+        Session::unset('loggedIn');
         header('location: ../login');
         exit;
     }
-
-
-
+    
 }

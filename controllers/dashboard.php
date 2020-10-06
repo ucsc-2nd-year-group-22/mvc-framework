@@ -29,6 +29,7 @@ class Dashboard extends Controller {
     // xhr => xml http request
     function xhrInsert () {
         $this->model->xhrInsert();
+        
     }
     
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css"/>
+    <script src="<?php echo URL;?>public/js/custom.js"></script>
+    <script src="<?php echo URL;?>public/js/jquery-3.5.1.min.js"></script>
     <?php
         if(isset($this->js)) {
             foreach ($this->js as $js)

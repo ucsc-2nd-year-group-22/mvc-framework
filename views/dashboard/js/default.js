@@ -1,5 +1,3 @@
-$(function() {
-    // $('#randomInsert').submit(function() {
-    //     return false;
-    // })
-})
+$(function(){
+    alert(1);
+});

@@ -35,8 +35,8 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
     Field       Type            Null        Key     Default     Extra
     ------------------------------------------------------------------------
 
-    id	    int(11)	            NO	        PRI	    NULL     	auto_increment	
-    text	varchar(255)	    NO		            NULL
+    id	    	int(11)	        NO	    PRI	    NULL     	auto_increment	
+    text	varchar(255)    NO		    NULL
 		
 
     

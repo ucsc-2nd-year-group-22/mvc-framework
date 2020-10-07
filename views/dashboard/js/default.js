@@ -8,12 +8,13 @@ $(function(){
             $('#listInserts').append('<div>' + o[i].text + '<a class="del" rel="'+ o[i].id + '" href="#"> [X]</a></div>');
         }
 
-        $('.del').click(function() {
+        $('.del').click(function() {  
             var id = $(this).attr('rel');
             // alert(id);
 
-            $.post(url, data, function(o) {
-                $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="' + o.id + '" href="#"> [X]</a></div>');
+            $.post('dashboard/xhrDeleteListing', {'id': id}, function(o) {
+                // $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="' + o.id + '" href="#"> [X]</a></div>');
+                alert('xxx');
             }, 'json');
 
             return false;

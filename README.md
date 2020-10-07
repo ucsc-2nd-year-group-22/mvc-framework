@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
 ```
    define('URL', 'http://localhost/mvc-framework/');
 ```
-1. Change database settings in **config/database **.
+3. Change database settings in **config/database**.
 ``` 
     define('DB_TYPE', 'mysql');
     define('DB_HOST', 'localhost');

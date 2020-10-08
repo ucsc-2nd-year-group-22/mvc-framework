@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
 ```
    define('URL', 'http://localhost/mvc-framework/');
 ```
-1. Change database settings in **config/database **.
+3. Change database settings in **config/database**.
 ``` 
     define('DB_TYPE', 'mysql');
     define('DB_HOST', 'localhost');
@@ -28,5 +28,17 @@ https://www.youtube.com/watch?v=9pa_PV2LUlw&ab_channel=TheCodingTrain
     id	        int(11)	        NO	    PRI	    NULL	auto_increment	
     login	varchar(25)	NO		    NULL	
     password	varchar(32)	NO		    NULL
+
+    data
+    -----
+
+    Field       Type            Null        Key     Default     Extra
+    ------------------------------------------------------------------------
+
+    id	    	int(11)	        NO	    PRI	    NULL     	auto_increment	
+    text	varchar(255)    NO		    NULL
+		
+
+    
 		
 ```

@@ -8,7 +8,7 @@ class Dashboard extends Controller {
         $logged = Session::get('loggedIn');
         if($logged == false) {
             Session::destroy();
-            header('location: ../login');
+            header('location: '. URL .'login');
             exit;
         }
 
@@ -22,7 +22,7 @@ class Dashboard extends Controller {
     function logout() {
         // Session::destroy();
         Session::unset('loggedIn');
-        header('location: ../login');
+        header('location: '. URL .'login');
         exit;
     }
     

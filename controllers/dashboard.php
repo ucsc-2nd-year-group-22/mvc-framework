@@ -29,7 +29,15 @@ class Dashboard extends Controller {
     // xhr => xml http request
     function xhrInsert () {
         $this->model->xhrInsert();
-        
+    }
+
+    function xhrGetListings() {
+        $this->model->xhrGetListings();
+    }
+
+    function xhrDeleteListing() {
+        $this->model->xhrDeleteListing();
     }
     
-}
+    
+}  

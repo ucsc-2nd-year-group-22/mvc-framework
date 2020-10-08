@@ -11,12 +11,12 @@ $(function(){
         $('.del').click(function() {  
             delItem = $(this);
             var id = $(this).attr('rel');
-            alert(id);
-            $.post('dashboard/xhrDeleteListing', {"id":id}, function(o) {
-                alert(id);
+            // alert(id);
+            $.post('dashboard/xhrDeleteListing', {'id':id}, function(o) {
+                // alert(id);
                 // $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="' + o.id + '" href="#"> [X]</a></div>');
                 delItem.parent().remove();
-            }, 'json');
+            });
 
             return false;
         });
@@ -30,7 +30,7 @@ $(function(){
 
         $.post(url, data, function(o) {
             // console.log(o);
-            $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="' + o.id + '" href="#"> [X]</a></div>');
+            $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="'+ o.id +'" href="#"> [X]</a></div>');
         }, 'json');
 
         return false;

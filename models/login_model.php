@@ -7,18 +7,19 @@ class Login_Model extends Model {
     }
 
     public function run() {
-        $st = $this->db->prepare("SELECT id FROM users WHERE login= :login AND password = MD5(:password) ");
+        $st = $this->db->prepare("SELECT id, role FROM users WHERE login= :login AND password = MD5(:password) ");
         $st->execute(array(
             ':login' => $_POST['login'],
             ':password' => $_POST['password']
         ));
 
-        // $data = $st->fetchAll();
-        // print_r($data);
+        $data = $st->fetch();
+
         $count = $st->rowCount();
         if($count > 0) {
             // login
             Session::init();
+            Session::set('role', $data['role']);
             Session::set('loggedIn', true);
             header('location: ../dashboard');
         } else {

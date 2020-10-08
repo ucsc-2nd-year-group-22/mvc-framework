@@ -9,16 +9,16 @@ $(function(){
         }
 
         $('.del').click(function() {  
+            delItem = $(this);
             var id = $(this).attr('rel');
-            // alert(id);
-
-            $.post('dashboard/xhrDeleteListing', {'id': id}, function(o) {
+            alert(id);
+            $.post('dashboard/xhrDeleteListing', {"id":id}, function(o) {
+                alert(id);
                 // $('#listInserts').append('<div>'+ o.text + '<a class="del" rel="' + o.id + '" href="#"> [X]</a></div>');
-                alert('xxx');
+                delItem.parent().remove();
             }, 'json');
 
             return false;
-
         });
 
     }, 'json');

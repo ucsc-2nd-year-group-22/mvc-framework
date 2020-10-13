@@ -30,7 +30,7 @@
         <?php if(Session::get('role') == 'owner'): ?>
             <a href="<?= URL?>user">Users</a> |
         <?php endif; ?>
-
+        <a href="<?= URL?>help">Help</a> |
         <a href="<?= URL?>dashboard/logout">Logout</a> | 
     <?php else: ?>
 

@@ -6,7 +6,7 @@ $(function(){
             $('#listInserts').append('<div>' + o[i].text + '<a class="del" rel="'+ o[i].id + '" href="#"> [X]</a></div>');
         }
 
-        $('.del').click(function() {  
+        $("body").on('click', '.del', function() {  
             delItem = $(this);
             var id = $(this).attr('rel');
             $.post('dashboard/xhrDeleteListing', {'id':id}, function(o) {
